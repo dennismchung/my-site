@@ -1,0 +1,13 @@
+.header {
+  background-color: black;
+  color: white;
+}
+
+.header ul{
+  list-style: none;
+  padding-left: 0;
+  display: flex;
+}
+.header ul li{
+  margin-right: 1em;
+}
