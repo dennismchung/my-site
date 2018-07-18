@@ -12,7 +12,14 @@
   display: flex;
 }
 .nav-bar ul li{
-  margin-right: 1em;
+}
+.nav-bar li:before {
+  margin: 0 .5em 0 .5em;
+  content: "|";
+}
+.nav-bar li:first-child:before {
+    content: "";
+    margin: 0;
 }
 .nav-bar a{
   color: white;
