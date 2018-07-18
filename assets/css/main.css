@@ -2,12 +2,35 @@
   background-color: black;
   color: white;
 }
-
-.header ul{
+.nav-bar {
+    max-width: 900px;
+    margin: 0 auto;
+}
+.nav-bar ul{
   list-style: none;
   padding-left: 0;
   display: flex;
 }
-.header ul li{
+.nav-bar ul li{
   margin-right: 1em;
+}
+.nav-bar a{
+  color: white;
+}
+.main-content{
+  padding-top: 1em;
+  max-width: 900px;
+  margin: 0 auto;
+}
+.main-content div:not(:last-child){
+  border-bottom: 1px solid black;
+}
+.box-response{
+  display: flex;
+  margin: 1em 0 1em 0;
+  padding: .5em;
+  height: 200px;
+}
+img{
+  display: none;
 }
