@@ -1,33 +1,78 @@
+html, body{
+  height: 100%
+}
 .header {
   background-color: black;
   color: white;
-}
-.nav-bar {
-    max-width: 900px;
-    margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
 }
 .nav-bar ul{
   list-style: none;
   padding-left: 0;
-  display: flex;
+  margin-bottom: 0;
+}
+.nav-bar h4{
+  margin-top: .5em;
+  text-align: right;
 }
 .nav-bar ul li{
+  text-align: right;
+  margin-top: .5em;
+  font-size: 14px;
 }
-.nav-bar li:before {
-  margin: 0 .5em 0 .5em;
-  content: "|";
+.nav-bar ul li:last-child{
+  color: grey;
 }
-.nav-bar li:first-child:before {
-    content: "";
-    margin: 0;
+.active{
+  text-decoration: underline;
+}
+#reg{
+  font-weight: 100;
+}
+@media only screen and (max-width: 991px){
+  .header {
+    height: 80px;
+    min-height: 80px!important;
+  }
+  .nav-bar h4{
+    text-align: left!important;
+    margin-bottom: 0;
+  }
+  .nav-bar ul{
+    display: flex;
+  }
+  .nav-bar li {
+    text-align: center!important;
+  }
+  .nav-bar li:before {
+    margin: 0 .5em 0 .5em;
+    content: "|";
+  }
+  .nav-bar li:first-child:before {
+      content: "";
+      margin: 0;
+  }
+  .box-response{
+    flex-direction: column;
+    text-align: center;
+  }
+  .box-response img{
+    margin: 0 auto;
+    margin-bottom: .5em;
+  }
+  .project-info {
+    margin-left: 0!important;
+  }
 }
 .nav-bar a{
   color: white;
 }
 .main-content{
   padding-top: 1em;
-  max-width: 900px;
   margin: 0 auto;
+  height: fit-content;
 }
 .main-content div:not(:last-child){
   border-bottom: 1px solid black;
@@ -35,9 +80,26 @@
 .box-response{
   display: flex;
   margin: 1em 0 1em 0;
-  padding: .5em;
-  height: 200px;
+  padding: 3em;
+  min-height: 150px;
+  max-width: 900px;
 }
-img{
-  display: none;
+.box-response img{
+  width: 100px;
+  height: 100px;
+}
+.project-info{
+  margin-left: 2em;
+}
+.project-info h4{
+  font-weight: 800;
+}
+.app.main-content img{
+  display: block;
+  max-width: 40%;
+  max-height: 40%;
+  margin: 1em 1em 1em 0;
+}
+.logo{
+  width: 10%;
 }
