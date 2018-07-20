@@ -100,6 +100,10 @@ html, body{
   max-height: 40%;
   margin: 1em 1em 1em 0;
 }
+.design img{
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
 .design-img{
   display: inline-block;
 }
@@ -111,8 +115,6 @@ html, body{
 }
 .smaller{
   max-height: 300px;
-  margin-top: 1em;
-  margin-bottom: 1em;
 }
 .logo{
   width: 10%;
