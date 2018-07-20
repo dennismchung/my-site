@@ -100,6 +100,18 @@ html, body{
   max-height: 40%;
   margin: 1em 1em 1em 0;
 }
+.design-img{
+  display: inline-block;
+}
+.wide{
+  max-width: 80%;
+}
+.small{
+  max-width: 40%;
+}
+.smaller{
+  max-height: 40%;
+}
 .logo{
   width: 10%;
 }
