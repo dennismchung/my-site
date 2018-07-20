@@ -110,7 +110,7 @@ html, body{
   max-width: 40%;
 }
 .smaller{
-  max-height: 40%;
+  max-height: 300px;
 }
 .logo{
   width: 10%;
