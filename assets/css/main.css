@@ -111,6 +111,8 @@ html, body{
 }
 .smaller{
   max-height: 300px;
+  margin-top: 1em;
+  margin-bottom: 1em;
 }
 .logo{
   width: 10%;
