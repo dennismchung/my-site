@@ -1,52 +1,436 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
+
   <head>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="assets/css/main.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Dennis' P2P - who needs SLEEP?</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/css/image-zoom.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="assets/css/scrolling-nav.css" rel="stylesheet">
+
+    <!--Fancy box stuff-->
+    <script src="assets/js/jquery-3.3.1.min.js"></script>
+
+    <link  href="assets/css/jquery.fancybox.min.css" rel="stylesheet">
+    <script src="assets/js/jquery.fancybox.min.js"></script>
+
   </head>
-  <body>
-    <div class="container-fluid">
-      <div class="row">
-        <div class="col-lg-2 header">
-          <div class="nav-bar">
-            <h4>Dennis<span id="reg">Chung</span></h4>
-            <ul>
-              <li><a class="active" href="/my-site">Design response</a></li>
-              <li><a href="/my-site/design.html">Design Work</a></li>
-              <li>Portfolio</li>
-            </ul>
+
+  <body id="page-top">
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" id="mainNav">
+      <div class="container">
+        <a class="navbar-brand js-scroll-trigger" href="#page-top">Dennis Chung</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#scenario">Scenario</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#define">Define</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#affinity-map">Affinity Map</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#task-flow">Task Flow</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#prototype">Prototype</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <header class="bg-primary text-white bg-image-full" style="background-image: url('assets/images/p2p-images/letgo-bg.png');background-size: cover;">
+      <div class="container text-center">
+        <h1>My Case study a marketplace app - Letgo</h1>
+      </div>
+    </header>
+
+    <!-- Content section -->
+    <section class="py-5 bg-light">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-10 mx-auto">
+            <h2>Introduction</h2>
+            <p>The purpose of this project is to pick a application do user research on it, find the common pain points in the UI/UX and fix them.</p>
+            <p>LetGo is a free marketplace platform to buy and sell items locally. The app facilitates the trade of used goods. It also uses artificial intelligence and image recognition technology for listing the items. With almost a million downloads it's a popular app for selling and buying things quickly. </p>
+            <p>After conducting user research I uncovered that there some issues that caused the user to have a lack of trust and uncomfort when using the app. My aim was to remove these issues and and replace it with a more trustworthy and improved user experience.</p>
           </div>
         </div>
-        <div class="col-lg-10">
-          <div class="main-content">
-            <div class="box-response">
-              <img src="assets/images/slack-logo.png">
-              <div class="project-info">
-                <h4>SLACK</h4>
-                <h5>Efficient and beautifully designed.</h5>
-                <a href="/my-site/slack.html">Read More</a>
-              </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-10 mx-auto">
+            <h2>Using Design thinking</h2>
+            <p><b>Research</b> - I did Usability testing on 6 users who have not used the app before. This gave me a better understanding of how the user expects the application to work. With more time and resources I would be interested in doing a User/Jobs To Be Done interview to uncover even more pain points, but I'll have to leave that for another day. </p>
+            <p>The plan was to make two scenarios for the user to attempt. I would then record and consolidate the research into insights/pain points. Define and prioritize what the problems were, find solutions then prototype and test the changes. I initially wrote the task out with specific instructions/tasks which actually helps the user use the application and does not represent how they would use the app in the wild. By making the scenarios have more of a story flow it would be more natural and result with accurate data.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="scenario" class="bg-light">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-10 mx-auto">
+            <h2>Scenario: Buying</h2>
+            <p>Objectives 1:</p>
+            <ul>
+               <li>Find a MacBook pro that you want to buy</li>
+               <li>Find out more information about the listing</li>
+               <li>Find more information about the seller</li>
+               <li>Save the listings you like</li>
+               <li>Message the seller.</li>
+            </ul>
+            <p>You want to find a macbook on this application for your parents/friends. Find a reasonable price (below 1600 reliable) and close by. Composite a list of potential sellers. When browsing you want to make sure there is plenty of information on the laptop before saving to your list. Also you want to make sure the seller is reliable and trustworthy. After making a list talk to the seller with the most appealing item.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-10 mx-auto">
+            <h2>Scenario: Selling</h2>
+
+            <p>Objectives 2:</p>
+            <ul>
+               <li>List an item on Letgo</li>
+               <li>Post more than one picture</li>
+               <li>Edit and update the product information</li>
+               <li>Delete/Remove/Stop advertising</li>
+            </ul>
+
+            <p>You're selling a wireless bluetooth mouse for your friend, you want to make sure potential buyers can see the bottom and top of the mouse. &nbsp;</p>
+
+            <p>After posting the mouse you want to add additional information e.g. 5 buttons, infinite scroll ..etc</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="bg-light">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-10 mx-auto">
+            <h2>Define</h2>
+            <p>When testing users on how they would go about buying a macbook or mouse on the letgo marketplace, there were a couple of minor pain points. </p>
+            <ol>
+               <li>When making a list of potential posts to buy they had trouble viewing the profile to check credibility of seller</li>
+               <li>More info was not as clear as they wanted it to be. Some people tried swiping or tapping the screen before seeing the &ldquo;more info&rdquo; button</li>
+               <li>People did not like the idea of pressing the &ldquo;ask for Details&rdquo; because it sent an immediate message to the seller without being able to customize the message.</li>
+               <li>Saving a post to view for later people had trouble navigating back to where their list was.</li>
+            </ol>
+            <p><b>For the selling point of view:</b></p>
+            <ol>
+               <li>When taking a picture of the item people got confused whether they were adding another picture for the same post instead of making a new post for a different item.</li>
+               <li>There was a little confusion with Deleting/removing the post after the item was sold.</li>
+            </ol>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-10 mx-auto">
+            <p>From the information I gathered I created two personas to represent the two user flows I looked at. One to represent the buyer flow and the other to represent the seller flow. &nbsp;These personas described the typical user, behaviours, goals and pain points.</p>
+
+            <h2>Persona: Buyer</h2>
+              <p><b>Name:</b> Jake<br/>
+              <b>Age:</b> 28<br/>
+              Active user of his phone, uses his phone a lot and applications on it.<br/>
+              Favorite apps are SMS and social media applications like instagram and facebook.<br/>
+
+              Working in the bay area at a tech startup in finance.  He commutes from the east bay to the city on bart. Uses his phone during the commute and before he goes to sleep. Rents an apartment in Oakland and uses letgo to find furniture.<br/>
+
+              <b>Behaviors:</b><br/>
+              He is a new user of letgo since he just moved to bay area and is looking for cheap affordable furniture.<br/>
+              Familiar with applications with a infinite scroll feature like pinterest and flickr.<br/>
+              Browses Letgo casually for newer tech and furniture.<br/>
+
+              <b>Goals:</b><br/>
+              Be able to furnish his new apartment<br/>
+              Save money<br/>
+
+              <b>Frustrations:</b><br/>
+              finding/messaging reliable sellers feels weird<br/>
+              Making a list of items is not efficient</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="bg-light">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-10 mx-auto">
+            <h2>Persona: Seller</h2>
+            <p><b>Name:</b> Jane<br/>
+            <b>Age:</b> 25<br/>
+
+            Jane is an avid user of her phone. She uses her phone and plays games on her phone daily. Her favorite applications to use are youtube and gmail.  Jane likes to collect and sell electronics. From computers to headphones.<br/>
+
+            <b>Behaviors:</b><br/>
+            Jane doesn’t use the letgo application often, but is familiar with it.<br/>
+            Familiar with multiple marketplace platforms such as facebook marketplace, craigslist ..etc, but likes the ability to post quickly on letgo.<br/>
+            Likes to check the credibility of the buyer/seller.<br/>
+
+            <b>Goals:</b><br/>
+            Be able to get rid of her electronics quickly.<br/>
+
+            <b>Frustrations:</b><br/>
+            Not being to add additional pictures and information when posting things to sell.</p>
+
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="py-5 bg-image-full" style="background-image: url('assets/images/p2p-images/insight-board.jpg');background-position: center;background-size: contain;background-repeat: space;">
+      <div style="height: 200px;"></div>
+    </section>
+
+    <section id="affinity-map" class="bg-light">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-10 mx-auto">
+            <h2>Affinity Map</h2>
+              <p>There were some common pain points between the users from the Affinity map: Business and User map. There are also a few outliers which I decided were not a priority/wouldn't have enough time to get to. This map was a little challenging because I wasn't sure what the business goal was for Letgo. There were a few questionable UI/UX decisions that made it unclear to say it was not in Letgos interest. One example: The message icon at the bottom right is meant for sending a pre-made instant message that does not allow the user to customize. Is that what Letgo intended? Do they have data backing up this experience? Something I would like to ask them given the opportunity.</p>
+            <div class="img-container">
+              <a data-fancybox="gallery" href="assets/images/p2p-images/affinity-business-user.jpg">
+                  <img src="assets/images/p2p-images/affinity-business-user.jpg">
+              </a>
             </div>
-            <div class="box-response">
-              <img src="assets/images/tesla-logo.png">
-              <div class="project-info">
-                <h4>TESLA: MODEL 3</h4>
-                <h5>Fun and familiar experience.</h5>
-                <a href="/my-site/tesla.html">Read More</a>
-              </div>
-            </div>
-            <div class="box-response">
-              <img src="assets/images/youtube-logo.png">
-              <div class="project-info">
-                <h4>YOUTUBE</h4>
-                <h5>Great resource for multiple uses.</h5>
-                <a href="/my-site/youtube.html">Read More</a>
-              </div>
+            <p>After mapping for the business and user I made another map with impact level and how easy it was to implement the changes. This was pretty easy for me to set up, I took the most common pain points ordered them according to highest impact and easiest to fix. </p>
+            <div class="img-container">
+              <a data-fancybox="gallery" href="assets/images/p2p-images/affinity-impact-difficulty.jpg">
+                  <img src="assets/images/p2p-images/affinity-impact-difficulty.jpg">
+              </a>
             </div>
           </div>
         </div>
       </div>
-    </div>
+    </section>
+
+    <section id="task-flow">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-10 mx-auto">
+            <h2>Task Flows</h2>
+            <p>After making sense of the affinity maps I made a task flow for both the seller and buyer.</p>
+            <div class="img-container">
+              <a data-fancybox="gallery" href="assets/images/p2p-images/task-flow.png">
+                  <img src="assets/images/p2p-images/task-flow.png">
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="bg-light">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-10 mx-auto">
+            <h2>Task Flow Revision</h2>
+            <p>Here I was able to figure out where and how I would implement my changes and updates. Making the User Flows made it easy to visualize where the pain points were happening, understanding and solutionizing the problem.</p>
+            <p>For example when the user is selling an item a common question/pain point that was brought up was the option of adding another picture. I could clearly see that task was missing in the task flow. Here it is with the update:</p>
+
+            <div class="img-container">
+              <a data-fancybox="gallery" href="assets/images/p2p-images/revised-task-flow.png">
+                  <img src="assets/images/p2p-images/revised-task-flow.png">
+              </a>
+            </div>
+
+            <p>Note: I would like to build out the complete ideal task flow and also show where the pain points are using a different colors.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-10 mx-auto">
+            <h2>Quick Sketches</h2>
+            <div class="img-container">
+              <a data-fancybox="gallery" href="assets/images/p2p-images/sketch-1.png">
+                  <img src="assets/images/p2p-images/sketch-1.png">
+              </a>
+            </div>
+              <div class="img-container">
+                <a data-fancybox="gallery" href="assets/images/p2p-images/sketch-2.png">
+                    <img src="assets/images/p2p-images/sketch-2.png">
+                </a>
+              </div>
+              <div class="img-container">
+                <a data-fancybox="gallery" href="assets/images/p2p-images/sketch-3.png">
+                    <img src="assets/images/p2p-images/sketch-3.png">
+                </a>
+              </div>
+              <div class="img-container">
+                <a data-fancybox="gallery" href="assets/images/p2p-images/sketch-4.png">
+                    <img src="assets/images/p2p-images/sketch-4.png">
+                </a>
+              </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <section>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-10 mx-auto">
+            <h2>Current UI Task Flow: Buying</h2>
+            <p>Here is the current UI task flow for buying an item on Letgo:</p>
+
+            <div class="img-container">
+              <a data-fancybox="gallery" href="assets/images/p2p-images/buying.png">
+                  <img src="assets/images/p2p-images/buying.png">
+              </a>
+            </div>
+            <p>Some common pain points worth mentioning in the buying user flow. People commonly mistook the instant message icon as a location or bookmark action. Upon tapping it they were surprised that it sent an instant pre filled message to the seller. A snackbar pops up as an option to undo the message, but it was not really visible and they did not want to send the message in the first place 5/6 people found this uncomfortable.<br><br>When browsing for items and saving/bookmarking 4/6 users had little to medium trouble finding where their saved/bookmark posts were.</p>
+
+            <p>When looking for more information on a post 3/6 users had trouble finding more information on the post. There is a small button at the top &ldquo;MORE INFO&rdquo;</p>
+
+            <p>Note to self: Talk about category changes.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="bg-light">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-10 mx-auto">
+            <h2>Current UI Task Flow: Selling</h2>
+            <p>Here is the current UI task flow for selling an item on Letgo:</p>
+
+            <div class="img-container">
+              <a data-fancybox="gallery" href="assets/images/p2p-images/selling.png">
+                  <img src="assets/images/p2p-images/selling.png">
+              </a>
+            </div>
+
+            <p>small problem was taking a picture and then wanting to add another picture to the same post. In order for the seller to add another picture they would have to post the picture then go into profile settings and then edit the post in the SELLING tab. 6/7 people thought tap done thinking they were taking a picture for the same item when actually they were creating another post.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <section>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-10 mx-auto">
+            <h2>Updated UI Task Flow: Buying</h2>
+            <p>Here is the updated UI task flow for buying an item on Letgo:</p>
+            <p>I removed the instant message feature and replaced it with a save icon and price display. This way the user can quickly browse through more content save any post quickly and refer back to it in their favorites/saved section.</p>
+            <p>(Expand on this)</p>
+            <p>In the updated UI I added Selling/Saved/Reviews/Sold into the hamburger menu instead of living in the profile section. And adding what is in the more info in the profile section on it's own. </p>
+            <p>On the Item Post I made the more info more clear by giving it the primary cta color. When tapping on the more info button they will see a similar page to the current version, but with an section about the seller (that can be linked to their profile page) and verification info. 3/6 users had trouble finding out where they could find that info.</p>
+            <p>I also removed the instant pre filled message with a &ldquo;message seller&rdquo; option with a secondary color. Tapping that will open up an overlay with the item info given and a keyboard with a pre filled message, but it can still be edited.</p>
+            <p>UI navbar top (Expand on this)</p>
+
+            <div class="img-container">
+              <a data-fancybox="gallery" href="assets/images/p2p-images/updated-buying.png">
+                  <img src="assets/images/p2p-images/updated-buying.png">
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="bg-light">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-10 mx-auto">
+            <h2>Updated UI Task Flow: Selling</h2>
+            <p>Here is the updated UI task flow for selling an item on Letgo:</p>
+
+            <div class="img-container">
+              <a data-fancybox="gallery" href="assets/images/p2p-images/updated-selling.png">
+                  <img src="assets/images/p2p-images/updated-selling.png">
+              </a>
+            </div>
+
+            <p>(Categories adding tech Expand on this).<br>Instead of post option after taking a picture I added a &ldquo;continue&rdquo; button that will take them to additional page where they add more pictures edit the info (optional since there is ML/AI that gets information from the picture taken. Cool, right?). I also changed the display option for people who want to give away the item for free or negotiate the price. Instead of a toggle I switched it to a checkbox. Once the checkbox is checked it will grey out the price region.</p>
+
+            <p>Once the user is done they can tap the post button. A modal will pop up asking whether they would like to post another item or return to the main menu.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-10 mx-auto">
+            <h2>Testing</h2>
+            <p>After conducting several usability tests and listening to the feedback given I went back again to improve the prototype.
+            The experience overall was smoother and users had no problem carrying out the scenario and the tasks. For buying an item users had a clear idea what each actionable item did. After discussing what the current state of the app has most of the users agreed that having a message icon was not something they would have preferred. Instead to be able to save it for later, view an aggregate of their saves and choose who they message was preferred.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="prototype" class="bg-light">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-10 mx-auto">
+            <h2>Final Prototype (SIKE!)</h2>
+            <p>
+            <div class="img-container">
+              <iframe width="424" height="916" src="//invis.io/4BNYF58E9QV" frameborder="0" allowfullscreen></iframe>
+            </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- Footer -->
+    <footer class="py-5 bg-dark">
+      <div class="container">
+        <p class="m-0 text-center text-white">Made without love.</p>
+      </div>
+      <!-- /.container -->
+    </footer>
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+
+    <!-- Custom JavaScript for this theme -->
+    <script src="js/scrolling-nav.js"></script>
+
   </body>
+
 </html>
