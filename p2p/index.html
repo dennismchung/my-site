@@ -17,6 +17,12 @@
     <!-- Custom styles for this template -->
     <link href="css/scrolling-nav.css" rel="stylesheet">
 
+    <!--Fancy box stuff-->
+    <script src="js/jquery-3.3.1.min.js"></script>
+
+    <link  href="css/jquery.fancybox.min.css" rel="stylesheet">
+    <script src="js/jquery.fancybox.min.js"></script>
+
   </head>
 
   <body id="page-top">
@@ -63,7 +69,7 @@
           <div class="col-lg-10 mx-auto">
             <h2>Introduction</h2>
             <p>The purpose of this project is to pick a application do user research on it, find the common pain points in the UI/UX and fix them.</p>
-            <p>LetGo is a free marketplace platform to buy and sell items locally. LetGo facilitates the trade of used goods. Letgo uses artificial intelligence and image recognition technology for listing the items. With almost a million downloads it&rsquo;s a popular app for selling and buying things quickly. </p>
+            <p>LetGo is a free marketplace platform to buy and sell items locally. The app facilitates the trade of used goods. It also uses artificial intelligence and image recognition technology for listing the items. With almost a million downloads it's a popular app for selling and buying things quickly. </p>
             <p>After conducting user research I uncovered that there some issues that caused the user to have a lack of trust and uncomfort when using the app. My aim was to remove these issues and and replace it with a more trustworthy and improved user experience.</p>
           </div>
         </div>
@@ -75,8 +81,8 @@
         <div class="row">
           <div class="col-lg-10 mx-auto">
             <h2>Using Design thinking</h2>
-            <p><b>Research</b> - I did Usability testing on 6 users who have not used the app before. This gave me a better understanding of how the user expects the application to work. With more time and resources I would be interested in doing a User/Jobs To Be Done interview to uncover even more pain points, but I&rsquo;ll have to leave that for another day. </p>
-            <p>The plan was to make two scenarios for the user to attempt. I would then record and consolidate the research into insights/pain points. I initially wrote the task out with specific instructions/tasks which actually helps the user use the application and does not represent how they would use the app in the wild. By making the scenarios have more of a story flow it would be more natural and result with accurate data.</p>
+            <p><b>Research</b> - I did Usability testing on 6 users who have not used the app before. This gave me a better understanding of how the user expects the application to work. With more time and resources I would be interested in doing a User/Jobs To Be Done interview to uncover even more pain points, but I'll have to leave that for another day. </p>
+            <p>The plan was to make two scenarios for the user to attempt. I would then record and consolidate the research into insights/pain points. Define and prioritize what the problems were, find solutions then prototype and test the changes. I initially wrote the task out with specific instructions/tasks which actually helps the user use the application and does not represent how they would use the app in the wild. By making the scenarios have more of a story flow it would be more natural and result with accurate data.</p>
           </div>
         </div>
       </div>
@@ -115,7 +121,7 @@
                <li>Delete/Remove/Stop advertising</li>
             </ul>
 
-            <p>You&rsquo;re selling a wireless bluetooth mouse for your friend, you want to make sure potential buyers can see the bottom and top of the mouse. &nbsp;</p>
+            <p>You're selling a wireless bluetooth mouse for your friend, you want to make sure potential buyers can see the bottom and top of the mouse. &nbsp;</p>
 
             <p>After posting the mouse you want to add additional information e.g. 5 buttons, infinite scroll ..etc</p>
           </div>
@@ -149,7 +155,7 @@
       <div class="container">
         <div class="row">
           <div class="col-lg-10 mx-auto">
-            <p>From the information I gathered I created two personas two represent the two user flows I looked at. One to represent the buyer flow and the other to represent the seller flow. &nbsp;These personas described the typical user, behaviours, goals and pain points.</p>
+            <p>From the information I gathered I created two personas to represent the two user flows I looked at. One to represent the buyer flow and the other to represent the seller flow. &nbsp;These personas described the typical user, behaviours, goals and pain points.</p>
 
             <h2>Persona: Buyer</h2>
               <p><b>Name:</b> Jake<br/>
@@ -211,13 +217,17 @@
         <div class="row">
           <div class="col-lg-10 mx-auto">
             <h2>Affinity Map</h2>
-              <p>There were some common pain points between the users from the Affinity map: Business and User map. There are also a few outliers which I decided were not a priority/wouldn&rsquo;t have enough time to get to. There are also a few that I wasn&rsquo;t sure what I was talking about so those are left outside of the map. This map was a little challenging because I wasn&rsquo;t sure what the business goal was for Letgo. There were a few questionable UI/UX decisions that made it unclear to say it was not in Letgos interest. One example: The message icon at the bottom right is meant for sending a pre-made instant message that does not allow the user to customize. Is that what Letgo intended? Do they have data backing up this experience? Something I would like to ask them given the opportunity.</p>
+              <p>There were some common pain points between the users from the Affinity map: Business and User map. There are also a few outliers which I decided were not a priority/wouldn't have enough time to get to. This map was a little challenging because I wasn't sure what the business goal was for Letgo. There were a few questionable UI/UX decisions that made it unclear to say it was not in Letgos interest. One example: The message icon at the bottom right is meant for sending a pre-made instant message that does not allow the user to customize. Is that what Letgo intended? Do they have data backing up this experience? Something I would like to ask them given the opportunity.</p>
             <div class="img-container">
-              <img class="thumbnail zoom" src="images/affinity-business-user.jpg">
+              <a data-fancybox="gallery" href="images/affinity-business-user.jpg">
+                  <img src="images/affinity-business-user.jpg">
+              </a>
             </div>
             <p>After mapping for the business and user I made another map with impact level and how easy it was to implement the changes. This was pretty easy for me to set up, I took the most common pain points ordered them according to highest impact and easiest to fix. </p>
             <div class="img-container">
-              <img class="thumbnail zoom" src="images/affinity-impact-difficulty.jpg">
+              <a data-fancybox="gallery" href="images/affinity-impact-difficulty.jpg">
+                  <img src="images/affinity-impact-difficulty.jpg">
+              </a>
             </div>
           </div>
         </div>
@@ -231,7 +241,9 @@
             <h2>Task Flows</h2>
             <p>After making sense of the affinity maps I made a task flow for both the seller and buyer.</p>
             <div class="img-container">
-              <img class="thumbnail zoom" src="images/task-flow.png">
+              <a data-fancybox="gallery" href="images/task-flow.png">
+                  <img src="images/task-flow.png">
+              </a>
             </div>
           </div>
         </div>
@@ -247,7 +259,9 @@
             <p>For example when the user is selling an item a common question/pain point that was brought up was the option of adding another picture. I could clearly see that task was missing in the task flow. Here it is with the update:</p>
 
             <div class="img-container">
-              <img class="thumbnail zoom" src="images/revised-task-flow.png">
+              <a data-fancybox="gallery" href="images/revised-task-flow.png">
+                  <img src="images/revised-task-flow.png">
+              </a>
             </div>
 
             <p>Note: I would like to build out the complete ideal task flow and also show where the pain points are using a different colors.</p>
@@ -261,17 +275,25 @@
         <div class="row">
           <div class="col-lg-10 mx-auto">
             <h2>Quick Sketches</h2>
+            <div class="img-container">
+              <a data-fancybox="gallery" href="images/sketch-1.png">
+                  <img src="images/sketch-1.png">
+              </a>
+            </div>
               <div class="img-container">
-                <img class="thumbnail zoom" src="images/sketch-1.png">
+                <a data-fancybox="gallery" href="images/sketch-2.png">
+                    <img src="images/sketch-2.png">
+                </a>
               </div>
               <div class="img-container">
-                <img class="thumbnail zoom" src="images/sketch-2.png">
+                <a data-fancybox="gallery" href="images/sketch-3.png">
+                    <img src="images/sketch-3.png">
+                </a>
               </div>
               <div class="img-container">
-                <img class="thumbnail zoom" src="images/sketch-3.png">
-              </div>
-              <div class="img-container">
-                <img class="thumbnail zoom" src="images/sketch-4.png">
+                <a data-fancybox="gallery" href="images/sketch-4.png">
+                    <img src="images/sketch-4.png">
+                </a>
               </div>
           </div>
         </div>
@@ -287,7 +309,9 @@
             <p>Here is the current UI task flow for buying an item on Letgo:</p>
 
             <div class="img-container">
-              <img class="thumbnail zoom" src="images/buying.png">
+              <a data-fancybox="gallery" href="images/buying.png">
+                  <img src="images/buying.png">
+              </a>
             </div>
             <p>Some common pain points worth mentioning in the buying user flow. People commonly mistook the instant message icon as a location or bookmark action. Upon tapping it they were surprised that it sent an instant pre filled message to the seller. A snackbar pops up as an option to undo the message, but it was not really visible and they did not want to send the message in the first place 5/6 people found this uncomfortable.<br><br>When browsing for items and saving/bookmarking 4/6 users had little to medium trouble finding where their saved/bookmark posts were.</p>
 
@@ -307,7 +331,9 @@
             <p>Here is the current UI task flow for selling an item on Letgo:</p>
 
             <div class="img-container">
-              <img class="thumbnail zoom" src="images/selling.png">
+              <a data-fancybox="gallery" href="images/selling.png">
+                  <img src="images/selling.png">
+              </a>
             </div>
 
             <p>small problem was taking a picture and then wanting to add another picture to the same post. In order for the seller to add another picture they would have to post the picture then go into profile settings and then edit the post in the SELLING tab. 6/7 people thought tap done thinking they were taking a picture for the same item when actually they were creating another post.</p>
@@ -325,13 +351,15 @@
             <p>Here is the updated UI task flow for buying an item on Letgo:</p>
             <p>I removed the instant message feature and replaced it with a save icon and price display. This way the user can quickly browse through more content save any post quickly and refer back to it in their favorites/saved section.</p>
             <p>(Expand on this)</p>
-            <p>In the updated UI I added Selling/Saved/Reviews/Sold into the hamburger menu instead of living in the profile section. And adding what is in the more info in the profile section on it&rsquo;s own. </p>
+            <p>In the updated UI I added Selling/Saved/Reviews/Sold into the hamburger menu instead of living in the profile section. And adding what is in the more info in the profile section on it's own. </p>
             <p>On the Item Post I made the more info more clear by giving it the primary cta color. When tapping on the more info button they will see a similar page to the current version, but with an section about the seller (that can be linked to their profile page) and verification info. 3/6 users had trouble finding out where they could find that info.</p>
             <p>I also removed the instant pre filled message with a &ldquo;message seller&rdquo; option with a secondary color. Tapping that will open up an overlay with the item info given and a keyboard with a pre filled message, but it can still be edited.</p>
             <p>UI navbar top (Expand on this)</p>
 
             <div class="img-container">
-              <img class="thumbnail zoom" src="images/updated-buying.png">
+              <a data-fancybox="gallery" href="images/updated-buying.png">
+                  <img src="images/updated-buying.png">
+              </a>
             </div>
           </div>
         </div>
@@ -346,7 +374,9 @@
             <p>Here is the updated UI task flow for selling an item on Letgo:</p>
 
             <div class="img-container">
-              <img class="thumbnail zoom" src="images/updated-selling.png">
+              <a data-fancybox="gallery" href="images/updated-selling.png">
+                  <img src="images/updated-selling.png">
+              </a>
             </div>
 
             <p>(Categories adding tech Expand on this).<br>Instead of post option after taking a picture I added a &ldquo;continue&rdquo; button that will take them to additional page where they add more pictures edit the info (optional since there is ML/AI that gets information from the picture taken. Cool, right?). I also changed the display option for people who want to give away the item for free or negotiate the price. Instead of a toggle I switched it to a checkbox. Once the checkbox is checked it will grey out the price region.</p>
