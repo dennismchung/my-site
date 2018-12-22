@@ -1,7 +1,7 @@
 body{
   font-family: 'Roboto', sans-serif;
   font-size: 18px;
-  line-height: 26px;
+  line-height: 24px;
 }
 h1,h2{
   font-family: 'Roboto Condensed', sans-serif;
@@ -9,6 +9,10 @@ h1,h2{
 h2{
   font-weight:700;
   margin-bottom: 24px;
+  border-bottom: 2px solid white;
+}
+p{
+  line-height: 32px;
 }
 /*
 font-family: 'Roboto Condensed', sans-serif;
@@ -27,8 +31,10 @@ font-family: 'Roboto', sans-serif;
 }
 .profile h1{
   font-weight: 700;
-  margin-top: 32px;
+  margin-top: 24px;
+  margin-bottom: 24px;
   text-align: center;
+  border-bottom: 2px solid black;
 }
 .profile p{
   line-height: 32px;
@@ -49,8 +55,8 @@ font-family: 'Roboto', sans-serif;
 }
 #profile-pic{
   border-radius: 50%;
-  width: 72px;
-  height: 72px;
+  width: 100px;
+  height: 100px;
   display: block;
   margin: 0 auto;
 }
@@ -99,10 +105,13 @@ font-family: 'Roboto', sans-serif;
 a.special:hover:before {
   background-color: rgba(255, 255, 255, 0.125);
 }
-.case-study .content a.dark{
+.dark h2{
+  border-bottom-color: black;
+}
+.case-study .content.dark a{
   color: #000;
 }
-.case-study .content a.dark:before{
+.case-study .content.dark a:before{
   color: #000;
   border: solid 2px rgba(0, 0, 0, 0.125);
 }
