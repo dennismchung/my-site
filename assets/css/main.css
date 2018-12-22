@@ -99,6 +99,7 @@ font-family: 'Roboto', sans-serif;
   font-family: "FontAwesome";
   font-weight: 300;
   content: "\f105";
+  line-height: 26px;
   display: inline-block;
   text-indent: 2px;
 }
