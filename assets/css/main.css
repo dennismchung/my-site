@@ -218,8 +218,23 @@ button.scroll_down:before {
   width: 100%;
 }
 .col-md-8.mx-auto {
-    margin: 60px 0 60px 0;
+    margin: 40px 0 40px 0;
 }
 img{
   width: 100%;
+}
+.sketch .row {
+    margin: 40px 0 40px 0;
+}
+.ideation img{
+  margin: 20px 0 20px 0;
+}
+.ideation .col-6, .col-12{
+  margin: 20px 0 20px 0;
+}
+.caption{
+  text-align: center;
+  margin-top: 10px;
+  font-size: 12px;
+  line-height: 16px;
 }
