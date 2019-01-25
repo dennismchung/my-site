@@ -14,12 +14,18 @@ h2{
 p{
   line-height: 32px;
 }
-/*
-font-family: 'Roboto Condensed', sans-serif;
-font-family: 'Roboto', sans-serif;
-*/
+.navbar{
+  background-color: white;
+}
+.navbar a{
+  text-decoration: none;
+  color: #343a40;
+}
+.navbar a:hover{
+  color: grey;
+}
 .case-study .container{
-  height: 466px;
+  height: 580px;
 }
 
 #banner{
@@ -37,6 +43,9 @@ font-family: 'Roboto', sans-serif;
 }
 .profile p{
   line-height: 32px;
+}
+.not-yet{
+  text-decoration: line-through!important;
 }
 #footer .container{
   height: 200px;
@@ -63,11 +72,16 @@ font-family: 'Roboto', sans-serif;
   font-family: 'Roboto Condensed', sans-serif;
   font-weight: 400;
 }
+#one, #two, #three{
+  color: white;
+}
 #one{
   background: url(../images/cricduel-bg.png);
   background-repeat: no-repeat;
   background-size: cover;
-  color: white;
+}
+#two{
+  background-color: #3F3E3E;
 }
 .case-study img{
   width: 80%;
@@ -102,25 +116,23 @@ font-family: 'Roboto', sans-serif;
   display: inline-block;
   text-indent: 2px;
 }
+
+a.special {
+  transition: .8s;
+}
+a.special:hover {
+  color: #BBD4D4;
+}
+
 a.special:hover:before {
+  transition: .8s;
   background-color: rgba(255, 255, 255, 0.125);
 }
-.dark h2{
-  border-bottom-color: black;
-}
-.case-study .content.dark a{
-  color: #000;
-}
-.case-study .content.dark a:before{
-  color: #000;
-  border: solid 2px rgba(0, 0, 0, 0.125);
-}
-a.special.dark:hover:before {
-  background-color: rgba(0, 0, 0, 0.125);
-}
 #three{
-    background-color: #E55757;
-    color: white;
+    background-color: #DC4A4A;
+}
+#three .bait img{
+  width: 60%;
 }
 
 #scroll p{
@@ -240,4 +252,13 @@ img{
 }
 .motion .row{
   margin-bottom: 20px;
+}
+
+/*Footer*/
+#footer li{
+    list-style-type: none;
+    margin: 10px 0 10px 0;
+}
+#footer a{
+  color: black;
 }
