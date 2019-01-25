@@ -238,3 +238,6 @@ img{
   font-size: 12px;
   line-height: 16px;
 }
+.motion .row{
+  margin-bottom: 20px;
+}
