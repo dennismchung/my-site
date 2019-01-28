@@ -211,6 +211,11 @@ button.scroll_down:before {
 }
 
 /*Cricduel*/
+@media only screen and (max-width: 767px) {
+  .insights {
+    flex-direction: column;
+  }
+}
 .insights{
   display: flex;
   align-items: center;
@@ -252,6 +257,12 @@ img{
 }
 .motion .row{
   margin-bottom: 20px;
+}
+.motion img{
+  max-width: 300px
+}
+.features img{
+  max-width: 300px
 }
 
 /*Footer*/
