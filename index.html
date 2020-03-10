@@ -1,96 +1,147 @@
-<!DOCTYPE HTML>
+<!DOCTYPE html>
 <html>
-  <head>
-    <link rel="shortcut icon" type="image/png" href="assets/images/favicon.png"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
-    <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300,400,700|Roboto:400,700" rel="stylesheet">
-    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="assets/vendor/bootstrap/css/bootstrap.min.css">
-    <link rel="stylesheet" href="assets/css/main.css">
-    <script src="assets/js/index.js"></script>
-  </head>
-  <body>
-    <header id="header">
-      <!--Nav stuff-->
-    </header>
-    <section id="banner">
-      <div class="container">
-        <div class="row justify-content-center">
-          <div class="profile col-lg-6 col-sm-12 flex-column d-column justify-content-center">
-            <img id="profile-pic" src="assets/images/headshot.png">
-            <h1>DENNIS <span id="spicy">CHUNG</span></h1>
-            <p>I am a Product Designer with expertise in visual design and engineering. With a background as a web engineer, I understand how to optimize the product development process by leveraging and clarifying constraints. My design process is rooted in building efficient and visually interesting experiences that solve core user problems.</p>
-          </div>
-        </div>
-        <div class="row">
-          <div id="scroll">
-            <p>View projects</p>
-            <button type="button" class="scroll_down" id="scroll_down"></button>
-          </div>
-        </div>
-      </div>
-    </section>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <section class="case-study" id="one">
-      <div class="container">
-        <div class="row h-100">
-          <div class="content col-md-5 col-sm-12 my-auto">
-            <h2>CRICDUEL</h2>
-            <p>CricDuel’s app had begun to gain massive traction in the world of cricket fantasy sports. We enhanced the existing core product and designed new and exciting features.</p>
-            <a class="special" href="cricduel.html" class="special">View Case Study</a>
-          </div>
+<!--js-->
+<script src="js/main.js"></script>
+<!--css-->
+<link rel="stylesheet" type="text/css" href="css/main.css">
+<link rel="stylesheet" type="text/css" href="css/custom.css">
+<style>
+#my-logo h3{
+  pointer-events: none;
+  margin-top: 0px;
+}
+#section-1{
+  /* background-image: radial-gradient(white, #FFE88B); */
+}
+#section-2{
+}
+</style>
+</head>
+<body>
+  <div class="uk-preserve-color">
+      <div uk-sticky="animation: uk-animation-slide-top; sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky; cls-inactive: uk-navbar-transparent uk-dark; top: 200">
+          <nav class="uk-navbar-container">
+              <div class="uk-container uk-container-medium">
+                  <div uk-navbar>
+                    <div class="uk-navbar-left">
+                      <ul class="uk-navbar-nav">
+                        <li id="my-logo">
+                          <a href="./index.html">
+                            <svg uk-parallax="stroke: 100%; viewport: .05;" width="60" height="60" style="position: absolute; stroke-dasharray: 0; stroke-dashoffset: 0;">
+                            <rect width="35" height="35" x="10" y="13" style="fill:rgb(0,0,0,0);stroke-width:2;stroke:rgb(0,0,0); z-index: -1; pointer-events: none;"></rect>
+                            </svg>
+                            <h3 class="uk-margin-remove-bottom">D.</h3>
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+              </div>
+          </nav>
+      </div>
+  </div>
+  <!--header-->
+  <a uk-totop uk-scroll uk-parallax="opacity: 0,1; viewport: .05; media: @s;" class="uk-position-fixed uk-position-bottom-right uk-margin-bottom uk-margin-right uk-slidenav-large"></a>
+  <div uk-parallax="opacity: 1,0; viewport: .5; media: @s;" class="uk-section">
+    <div class="uk-container uk-container-small uk-text-center uk-flex uk-flex-middle" id="header" uk-height-viewport="offset-top: true; offset-bottom: 10">
+      <div>
+        <div style="height: 100px;" class="uk-flex uk-flex-middle uk-flex-center">
+          <svg height="150" width="150" style="position: absolute;">
+            <circle cx="75" cy="75" r="56" stroke="#6A6A6A" stroke-width="2" fill="none"></circle>
+            Sorry, your browser does not support inline SVG.
+          </svg>
+          <img class="profile" src="assets/images/profile-pic.png">
+        </div>
+  			<h1 class="uk-text-uppercase"><span class="uk-text-bolder">DENNIS.</span>CHUNG</h1>
+  			<p class="uk-text-large uk-text-light">I am a Product Designer with expertise in visual design and engineering. With a background as a web engineer, I understand how to optimize the product development process by leveraging and clarifying constraints.</p>
+        <a href="#section-1" class="scroll" uk-scroll="offset: 64;"></a>
+			</div>
+		</div>
+  </div>
+  <!--Kiddom Student Take-->
+  <div class="uk-section uk-flex uk-flex-middle box-section" id="section-1">
+    <div class="uk-container uk-container-small">
+      <div  class="uk-flex-middle" uk-grid>
+        <div class="uk-width-1-2@s uk-flex-center">
+            <img uk-parallax="y: -100, 0; opacity: 0,1; viewport: 0.5; media: @s;" class="product" src="assets/images/student-take/student-take-home.png" alt="Image">
+        </div>
+        <div uk-parallax="y: -100, 0; opacity: 0,1; viewport: 0.5; media: @s;" class="uk-width-1-2@s">
+          <h2 class="uk-text-center uk-text-left@s">Kiddom: Student Assignments and Assessments</h2>
+          <p>Allowing students to take their class's assessments and assignments on iOS, Android, mobile or a tablet device.</p>
+          <a href="./student-take.html"><button class="uk-button uk-button-secondary uk-align-center uk-align-left@s">View Case Study</button></a>
         </div>
       </div>
-    </section>
-    <section class="case-study" id="two">
-      <div class="container">
-        <div class="row h-100">
-          <div class="bait col-md-7 col-sm-12 my-auto">
-            <img src="assets/images/nextravel-preview.png">
-          </div>
-          <div class="content col-md-5 col-sm-12 my-auto">
-            <h2>NEXTRAVEL</h2>
-            <p>Over the last 3 years the NexTravel product has grown organically based on customer requests and feedback. Our team was tasked to redesign the information architecture and site navigation.</p>
-            <a class="special" href="nextravel.html" class="special">View More</a>
-          </div>
+    </div>
+  </div>
+  <!--Kiddom for families-->
+  <div class="uk-section uk-flex uk-flex-middle box-section" id="section-2">
+    <div class="uk-container uk-container-small">
+      <div  class="uk-flex-middle" uk-grid>
+        <div class="uk-width-1-2@s uk-flex-center">
+            <img uk-parallax="y: -100, 0; opacity: 0,1; viewport: 0.5; media: @s;" class="product" src="assets/images/family/family-product-overview.png" alt="Image">
+        </div>
+        <div uk-parallax="y: -100, 0; opacity: 0,1; viewport: 0.5; media: @s;" class="uk-width-1-2@s uk-flex-first@s">
+          <h2 class="uk-text-center uk-text-left@s">Kiddom: Families</h2>
+          <p>An extension of a teacher and student classroom application which allows a Parent to see their childs progress in class.</p>
+          <a href="./families.html"><button class="uk-button uk-button-secondary uk-align-center uk-align-left@s">View Case Study</button></a>
         </div>
       </div>
-    </section>
-    <section class="case-study" id="three">
-      <div class="container">
-        <div class="row h-100">
-          <div class="content col-md-5 col-sm-12 my-auto">
-            <h2>LETGO</h2>
-            <p>Letgo is a marketplace app that focuses on getting users to buy and sell items quickly.</p>
-            <a class="special" href="letgo.html" class="special">View More</a>
-          </div>
-          <div class="bait col-md-7 col-sm-12 my-auto">
-            <img src="assets/images/letgo-preview.png">
-          </div>
+    </div>
+  </div>
+  <!--Kiddom consolidated sign-up-->
+  <div class="uk-section uk-flex uk-flex-middle box-section" id="section-3">
+    <div class="uk-container uk-container-small">
+      <div  class="uk-flex-middle" uk-grid>
+        <div class="uk-width-1-2@s uk-flex-center">
+            <img uk-parallax="y: -100, 0; opacity: 0,1; viewport: 0.5; media: @s;" class="product" src="assets/images/sign-up/sign-up-m.png" alt="Image">
+        </div>
+        <div uk-parallax="y: -100, 0; opacity: 0,1; viewport: 0.5; media: @s;" class="uk-width-1-2@s">
+          <h2 class="uk-text-center uk-text-left@s">Kiddom: Sign-Up</h2>
+          <p>A more distinct and intuitive pathway for a teacher, student and administrator to sign-up.</p>
+          <a href="./sign-up.html"><button class="uk-button uk-button-secondary uk-align-center uk-align-left@s">View Case Study</button></a>
         </div>
       </div>
-    </section>
-    <script>
-    $(window).scroll(function(){
-        $("#scroll").css("opacity", 1 - $(window).scrollTop() / 350);
-      });
-    </script>
-    <script src="assets/js/index.js"></script>
+    </div>
+  </div>
 
-    <section id="footer">
-      <div class="container">
-        <div class="row h-100">
-          <div class="content d-flex flex-column justify-content-center my-auto">
-            <ul>
-              <li>Dennis Chung - 2019</li>
-              <li><a href="https://www.linkedin.com/in/dennismchung/">LinkedIn</a></li>
-              <li><a href="assets/dennis-chung.pdf">Resume</a></li>
-            </ul>
-          </div>
+  <!--Cricduel-->
+  <div class="uk-section uk-flex uk-flex-middle box-section" id="section-4">
+    <div class="uk-container uk-container-small">
+      <div  class="uk-flex-middle" uk-grid>
+        <div class="uk-width-1-2@s uk-flex-center">
+            <img uk-parallax="y: -100, 0; opacity: 0,1; viewport: 0.5; media: @s;" class="product" src="assets/images/cricduel/cricduel.png" alt="Image">
+        </div>
+        <div uk-parallax="y: -100, 0; opacity: 0,1; viewport: 0.5; media: @s;" class="uk-width-1-2@s uk-flex-first@s">
+          <h2 class="uk-text-center uk-text-left@s">Cricduel</h2>
+          <p>CricDuel’s app had begun to gain massive traction in the world of cricket fantasy sports. We enhanced the existing core product and designed new and exciting features.</p>
+          <a href="./cricduel.html"><button class="uk-button uk-button-secondary uk-align-center uk-align-left@s">View Case Study</button></a>
         </div>
       </div>
-    </section>
-
-  </body>
+    </div>
+  </div>
+  <!--Nexttravel-->
+  <div class="uk-section uk-flex uk-flex-middle box-section" id="section-3">
+    <div class="uk-container uk-container-small">
+      <div  class="uk-flex-middle" uk-grid>
+        <div class="uk-width-1-2@s uk-flex-center">
+            <img uk-parallax="y: -100, 0; opacity: 0,1; viewport: 0.5; media: @s;" class="product" src="assets/images/nextravel/nextravel-preview.png" alt="Image">
+        </div>
+        <div uk-parallax="y: -100, 0; opacity: 0,1; viewport: 0.5; media: @s;" class="uk-width-1-2@s">
+          <h2 class="uk-text-center uk-text-left@s">NexTravel</h2>
+          <p>Over the last 3 years the NexTravel product has grown organically based on customer requests and feedback. Our team was tasked to redesign the information architecture and site navigation.</p>
+          <a href="./nextravel.html"><button class="uk-button uk-button-secondary uk-align-center uk-align-left@s">View Case Study</button></a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--footer-->
+    <footer class="uk-section uk-section-small">
+  			<div class="uk-container">
+  				<p class="uk-text-small uk-text-center">Copyright 2019 - Created by Dennis | Built with <a href="http://getuikit.com" title="" target="_blank" data-uk-tooltip="" aria-expanded="false"><span data-uk-icon="uikit" class="uk-icon"><svg width="20" height="20" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg" data-svg="uikit"><polygon points="14.4,3.1 11.3,5.1 15,7.3 15,12.9 10,15.7 5,12.9 5,8.5 2,6.8 2,14.8 9.9,19.5 18,14.8 18,5.3"></polygon><polygon points="9.8,4.2 6.7,2.4 9.8,0.4 12.9,2.3"></polygon></svg></span></a> </p>
+  			</div>
+	</footer>
+</body>
 </html>

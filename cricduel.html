@@ -1,216 +1,262 @@
-<!DOCTYPE HTML>
+<!DOCTYPE html>
 <html>
-  <head>
-    <link rel="shortcut icon" type="image/png" href="assets/images/favicon.png"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300,400,700|Roboto:400,700" rel="stylesheet">
-    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="assets/vendor/bootstrap/css/bootstrap.min.css">
-    <link rel="stylesheet" href="assets/css/main.css">
-    <script src="assets/js/index.js"></script>
-  </head>
-  <body>
-    <nav class="navbar sticky-top navbar-light bg-white">
-      <a class="navbar-brand" href="/"><b>DENNIS</b> CHUNG</a>
-      <div class="form-inline my-2 my-lg-0" id="top-nav">
-        <a href="#header">Top</a>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!--js-->
+<script src="js/main.js"></script>
+<!--css-->
+<link rel="stylesheet" type="text/css" href="css/main.css">
+<link rel="stylesheet" type="text/css" href="css/custom.css">
+<style>
+  .section-1{
+    height: 450px;
+  }
+  #dc-color{
+    /* background-color: #FFE88B; */
+    background-image: linear-gradient(white, #3A5C44);
+  }
+  .problem-sec{
+    background-color: #064781;
+    color: white;
+  }
+  .problem-sec li{
+    font-size: 1.5rem;
+    line-height: 1.95;
+  }
+  .annotate-box{
+    width: 40px;
+    height: 40px;
+    border-radius: 4px;
+    font-size: 22px;
+    color: white;
+  }
+  ol.annotate-me {
+  	list-style: none;
+    counter-reset: my-awesome-counter;
+  }
+  ol.annotate-me li {
+    counter-increment: my-awesome-counter;
+    margin: 0 0 2rem 0;
+    position: relative;
+    padding-left: 1em;
+  }
+  ol.annotate-me li::before {
+    content: counter(my-awesome-counter) " ";
+    font-size: 1.5rem;
+    position: absolute;
+    color: white;
+    --size: 32px;
+    left: calc(-1 * var(--size) - 10px);
+    line-height: var(--size);
+    width: var(--size);
+    height: var(--size);
+    top: 0;
+    font-weight: 300;
+    border-radius: 4px;
+    text-align: center;
+    padding: 2px 1px 2px 2px;
+  }
+  ol.annotate-me li:nth-child(1)::before{
+    background-color: rgb(135, 115, 255);
+  }
+  ol.annotate-me li:nth-child(2)::before{
+    background-color: rgb(56, 180, 252);
+  }
+  ol.annotate-me li:nth-child(3)::before{
+    background-color: rgb(207, 15, 104);
+  }
+  .annotate-me li:nth-child(4)::before{
+    background-color: rgb(47, 198, 2);
+  }
+
+  #my-logo h3{
+    pointer-events: none;
+    margin-top: 0px;
+  }
+
+</style>
+</head>
+<body>
+  <div class="uk-preserve-color">
+      <div uk-sticky="animation: uk-animation-slide-top; sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky; cls-inactive: uk-navbar-transparent uk-dark; top: 200">
+          <nav class="uk-navbar-container">
+              <div class="uk-container uk-container-medium">
+                  <div uk-navbar>
+                    <div class="uk-navbar-left">
+                      <ul class="uk-navbar-nav">
+                        <li id="my-logo">
+                          <a href="./index.html">
+                            <svg uk-parallax="stroke: 100%; viewport: .05;" width="60" height="60" style="position: absolute; stroke-dasharray: 0; stroke-dashoffset: 0;">
+                            <rect width="35" height="35" x="10" y="13" style="fill:rgb(0,0,0,0);stroke-width:2;stroke:rgb(0,0,0); z-index: -1; pointer-events: none;"></rect>
+                            </svg>
+                            <h3 class="uk-margin-remove-bottom">D.</h3>
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+              </div>
+          </nav>
       </div>
-    </nav>
-    <header id="header">
-      <!--Nav stuff-->
-    </header>
-    <div id="top" class="container-fluid">
-      <div class="row">
-        <div class="col-md-8 mx-auto">
-          <h2><a id="Cricduel_0"></a>Cricduel</h2>
-          <p>CricDuel is a fantasy sports contest that allows Cricket lovers to play daily, as opposed to a lengthy season. Matching a pair of players to enter into a draft picking system gives each player the opportunity to pick the ultimate team for that match. CricDuel is unique and allows players to create one-of-a-kind team. This allows for a much more even playing field between the entry level beginner and the long time playing cricket lover.</p>
-        </div>
-        <div class="col-md-12 full-width">
-          <img src="assets/images/cricduel/hero-cricduel-1.png" alt="Multiple screens of app">
-        </div>
-        <div class="col-md-8 mx-auto">
-          <h3><a id="Goal_4"></a>Goal</h3>
-          <p>Cricduel approached our design team with a number of requests and goals: Improve the overall user experience of its core features,  engage more users and create a new visual direction for their app.</p>
-          <p>My role as a product designer for our client involved UX research, Visual UI Design, Interaction Design, Prototyping, and Style Guide/Component Library (Design Systems) management.</p>
-        </div>
-        <div class="col-md-8 mx-auto">
-          <img src="assets/images/cricduel/sample-cricduel-1.png" alt="Multiple screens of app">
-        </div>
-        <div class="col-md-8 mx-auto">
-          <h3><a id="Discovery_8"></a>Discovery</h3>
+  </div>
 
-          <p>Some key insights that we discovered while talking with our client, conducting user interviews and competitor and comparator analysis.</p>
-          <div class="insights">
-            <img src="assets/images/cricduel/stat.png" alt="stat icon">
-            <p>No statistics provided for each player. Would have to look up the information on a player on a different app or browser.</p>
-          </div>
-          <div class="insights">
-            <img src="assets/images/cricduel/touch.png" alt="Mouse icon">
-            <p>Engagement. New users were not actively engaging with the app over time.</p>
-          </div>
-          <div class="insights">
-            <img src="assets/images/cricduel/alert.png" alt="Alert icon">
-            <p>No push notifications indicating if the match and contest were completed.</p>
-          </div>
-          <div class="insights">
-            <img src="assets/images/cricduel/design.png" alt="Ruler Pencil icon">
-            <p>Low quality in visual design. Cricduel did not have a proprietary designer and with organic growth and an influx of users there was an increase in design debt.</p>
-          </div>
-          <div class="insights">
-            <img src="assets/images/cricduel/play.png" alt="Play icon">
-            <p>Live Draft: A new game mode that is used by a few fantasy sports apps, but none used by Cricduels direct competitors. This would be the unique value  proposition Cricduel would offer and attract new users.</p>
-          </div>
-          <div class="insights">
-            <img src="assets/images/cricduel/leader.png" alt="Medal icon">
-            <p>Leaderboard: to make Cricduel even more competitive and fun a global leaderboard feature to gameify the experience was requested. Having a leaderboard would increase user retention and interaction with the app.</p>
-          </div>
-        </div>
-        <div class="col-md-8 mx-auto">
-          <h3><a id="Ideation_33"></a>Ideation</h3>
-          <div class="row ideation">
-            <div class="col-md-12">
-              <p>We audited all parts of the app to gain an understanding of the features and components.</p>
-            </div>
-            <div class="col-md-12">
-              <img src="assets/images/cricduel/before-classic-enter.png" alt="old screenshots">
-            </div>
-            <div class="col-md-12">
-              <img src="assets/images/cricduel/before-classic-create.png" alt="old screenshots">
-            </div>
-          </div>
-        </div>
-        <div class="col-md-8 mx-auto">
-          <p>We created task flows and sketched out various improvements from the research that could help the general user experience with the features. Ways to increase engagement with new users and make the digestion of information easier and pleasant to view.</p>
-        </div>
-        <div class="col-md-10 mx-auto">
-          <img src="assets/images/cricduel/cricduel-flowchart.png" alt="Sketches/Lofi/Midfi">
-        </div>
-        <div class="col-md-8 mx-auto">
-          <p>With the information gathered from the competitive/comparator research and the discovery phase I pushed for the restructuring of the core feature: classic draft. Which would create a more engaging experience for the new user.</p>
-        </div>
-        <div class="col-md-8 mx-auto">
-          <p>Here are a few ideas I sketched out for the classic draft redesign:</p>
-        </div>
-        <div class="col-md-12 full-width">
-          <img src="assets/images/cricduel/cricduel-sketches-all.png" alt="Sketches/Lofi/Midfi">
-        </div>
-        <div class="col-md-8 mx-auto">
-          <p>After sketching, iterating and further discussion we landed on a design for the classic draft and implemented the design across the application.</p>
-        </div>
-        <div class="col-md-8 mx-auto">
-          <img src="assets/images/cricduel/mockup-classic-enter.png" alt="Sketches/Lofi/Midfi">
-        </div>
-        <div class="col-md-8 mx-auto">
-          <img src="assets/images/cricduel/mockup-classic-create.png" alt="Sketches/Lofi/Midfi">
-        </div>
-        <div class="col-md-8 mx-auto">
-          <div class="row">
-            <div class="col-12">
-              <h3><a id="The_Redesign_39"></a>The Redesign</h3>
-              <p>One of the key goals of the project was to create new visual design and design language that would be consistent throughout the features and app. We wanted it to be modern, but stay true to the original brand. While redesigning the app we went through a check list:</p>
-              <p>Is it <b>Fun?</b></p>
-              <p>is it <b>intuitive?</b></p>
-              <p>is it fun and <b>approachable?</b></p>
-            </div>
-            <div class="col-12">
-              <img src="assets/images/cricduel/final-classic-enter.png" alt="Sketches/Lofi/Midfi">
-            </div>
-            <div class="col-12">
-              <img src="assets/images/cricduel/final-classic-create.png" alt="Sketches/Lofi/Midfi">
-            </div>
-          </div>
-        </div>
-        <div class="col-md-8 mx-auto">
-          <h3><a id="Animation_Ideas_51"></a>Motion Ideas</h3>
+  <!--header-->
+  <a uk-totop uk-scroll uk-parallax="opacity: 0,1; viewport: .05; media: @s;" class="uk-position-fixed uk-position-bottom-right uk-margin-bottom uk-margin-right uk-slidenav-large"></a>
 
-          <p>A majority of the users based in India and had 360 x 640 resolution. Taking that into consideration with the amount of information our app was delivering paired along with our design we had to think of ways how to display the information and accommodate scrolling. Here are a few examples we played with:</p>
+  <div class="uk-section" id="dc-color">
+    <div class="uk-container uk-text-center uk-container-small">
+        <h1>Cricduel</h1>
+        <div class="uk-container">
+          <p class="uk-text-large uk-text-light">CricDuel is a fantasy sports contest that allows Cricket lovers to play daily, as opposed to a lengthy season. Matching a pair of players to enter into a draft picking system gives each player the opportunity to pick the ultimate team for that match.</p>
         </div>
-        <div class="col-md-8 mx-auto motion">
-          <div class="row">
-            <div class="col-md-4 mx-auto" align="center">
-              <img src="assets/images/cricduel/interaction-1.gif" alt="Animation of lofi/midfi">
-              <p class="caption">As the user scrolls down to view more contests the header collapses.</p>
-            </div>
-            <div class="col-md-4 col-sm-12 mx-auto" align="center">
-              <img src="assets/images/cricduel/interaction-2.gif" alt="Animation of lofi/midfi">
-              <p class="caption">Transition between contest modes to simulate a page swipe.</p>
-            </div>
-          </div>
-          <div class="row">
-            <div class="col-md-4 col-sm-12 mx-auto" align="center">
-              <img src="assets/images/cricduel/final-interaction-1.gif" alt="Hifi of Livedraft">
-              <p class="caption">Final version of header collapse on scroll.</p>
-
-            </div>
-            <div class="col-md-4 col-sm-12 mx-auto" align="center">
-              <img src="assets/images/cricduel/final-interaction-2.gif" alt="Hifi of Livedraft">
-              <p class="caption">Final version of contest most change.</p>
-            </div>
-          </div>
-          <div class="row">
-            <div class="col-md-4 col-sm-12 mx-auto" align="center">
-              <img src="assets/images/cricduel/interaction-3.gif" alt="Hifi of Livedraft">
-              <p class="caption">The user can distinguish their teams by captain and vice captain then expand to see the full team.</p>
-            </div>
-            <div class="col-md-4 col-sm-12 mx-auto" align="center">
-              <img src="assets/images/cricduel/interaction-4.gif" alt="Hifi of Livedraft">
-              <p class="caption">In stat view the user can see the players average points and previous game stats.</p>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-8 mx-auto features">
-          <div class="row">
-            <div class="col-8 mx-auto justify-content-center align-self-center">
-            <h3><a id="Classic_Draft_56"></a>Classic Draft:</h3>
-            <p>Classic draft is where the player chooses an upcoming match. Ther player then chooses to enter a contest to enter. There are three contest categories which differ in player entries and prizes. The user can then create his/her custom team from the match and compete against other users.</p>
-            </div>
-            <div class="col-md-4 mx-auto" align="center">
-              <img src="assets/images/cricduel/classdraft.png" alt="Hifi of Classic Draft">
-            </div>
-          </div>
-        </div>
-        <div class="col-md-8 mx-auto features">
-          <div class="row">
-            <div class="col-md-4 col-sm-12 mx-auto" align="center">
-              <img src="assets/images/cricduel/leaderboard.png" alt="Hifi of Leaderboard">
-            </div>
-            <div class="col-md-8 mx-auto justify-content-center align-self-center">
-              <h3><a id="Leaderboard_61"></a>Leaderboard:</h3>
-              <p>Leaderboard that showed the monthly rank, badges earned from winning in contests and win amounts. We also included a hierarchy from beginner to intermediate. The intent of the leaderboard because people like to win and compare themselves with their community which motivates them.</p>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-8 mx-auto features">
-          <div class="row">
-            <div class="col-md-8 mx-auto justify-content-center align-self-center">
-              <h3><a id="LiveDraft_66"></a>LiveDraft:</h3>
-              <p>Livedraft is where the users would choose an upcoming cricket match and enter a contest where they would play against another user Head-to-Head. They would be given 30 seconds to draft a player and would alternate choosing until all player positions have been filled. The teams would be locked in and results would be announced after the cricket match is over.</p>
-            </div>
-            <div class="col-md-4 col-sm-12 mx-auto" align="center">
-              <img src="assets/images/cricduel/livedraft.png" alt="Hifi of Livedraft">
-            </div>
-          </div>
-        </div>
-        <div class="col-md-8 mx-auto">
-          <h3><a id="Design_System_74"></a>Design System</h3>
-          <p>
-            We created documentation for the visual design requirements to hand off to the engineer. This document contained style guides, component library and design specifications to help as the application grows the next designer/developer could user as a reference.
-          </p>
-          <p>
-            I modeled the system after Googles <a href="https://material.io/design/">Material Design</a>. Paired with using Abstract we created a live and shareable component library. Abstract does a pretty good job simulating version control and it’s specifically for design teams!
-          </p>
-        </div>
-        <div class="col-md-12 full-width">
-              <img src="assets/images/cricduel/design-system-sample.png" alt="Design System Images">
-        </div>
-        <div class="col-md-8 mx-auto">
-          <h3><a id="Design_System_74"></a>Takeaways</h3>
-            <p>Doing a redesign and managing a design system is really difficult. Given the 8 week timeline, redesign and 2 new features it was really hectic in managing the components. Different teams would be making or changing components and their use cases.</p>
-            <p>Abstract + Material Design, I definitely would trim down unused symbols components as soon as possible, running sketch plugin: symbol organizer on the material design library slows down the process tremendously.</p>
-            <p>Have multiple reviewers on the design system team. I was the sole reviewer of component and other changes done. This took up too much time especially when deadlines became tighter. However as much as it was hectic it was really cool creating a system that was evolving into something tangible and usable.</p>
-            <p>I enjoyed making the detailed interactions and animations. When a developer is able to see the whole process down to the animations I know it makes their life a little easier! </p>
-        </div>
+    </div>
+    <div class="uk-container uk-flex uk-margin-top">
+      <div class="uk-container">
+        <img data-src="assets/images/cricduel/sample-cricduel-1.png" width="800" uk-img>
       </div>
     </div>
-  </body>
+  </div>
+  <div class="uk-section">
+      <div class="uk-container uk-container-small">
+        <div class="uk-grid uk-grid-stack" uk-grid="">
+            <div class="uk-width-2-3@m uk-padding uk-padding-remove-top">
+              <h3>Goal</h3>
+              <p>Cricduel approached our design team with a number of requests and goals: Improve the overall user experience of its core features, engage more users and create a new visual direction for their app.</p>
+              <p>My role as a product designer for our client involved UX research, Visual UI Design, Interaction Design, Prototyping, and Style Guide/Component Library (Design Systems) management.</p>
+            </div>
+            <div class="uk-width-1-3@m uk-first-column">
+              <h4>My Role:</h4>
+              <p>UI/UX Designer</p>
+            </div>
+        </div>
+        <div class="uk-container uk-container-small uk-margin-large">
+          <h3>Research</h3>
+          <p>We audited all parts of the app to gain an understanding of the features and components.</p>
+          <div uk-lightbox class="uk-margin-top">
+            <a href="assets/images/cricduel/before-classic-enter.png"><img src="assets/images/cricduel/before-classic-enter.png"></a>
+          </div>
+          <div uk-lightbox class="uk-margin-top">
+            <a href="assets/images/cricduel/before-classic-create.png"><img src="assets/images/cricduel/before-classic-create.png"></a>
+          </div>
+        </div>
+        <div class="uk-container uk-container-small uk-margin-large">
+          <p>Created task flows and tested with local fantasy sports fans to see where some pain points are</p>
+          <div uk-lightbox>
+            <a href="assets/images/cricduel/cricduel-flowchart.png"><img src="assets/images/cricduel/cricduel-flowchart.png"></a>
+          </div>
+          <p>With the information gathered from the competitive/comparator research and the discovery phase I pushed for the restructuring of the core feature: classic draft. Which would create a more engaging experience for the new user.</p>
+        </div>
+    </div>
+    <div class="uk-section">
+      <div class="uk-container uk-container-small">
+        <h3>Sketches</h3>
+        <div uk-slider>
+          <div class="uk-position-relative">
+              <div class="uk-slider-container uk-light">
+                  <ul class="uk-slider-items uk-child-width-1-1 uk-child-width-1-1@s uk-child-width-1-1@m">
+                      <li>
+                          <img src="assets/images/cricduel/cricduel-sketch-3.png" alt="">
+                      </li>
+                      <li>
+                          <img src="assets/images/cricduel/cricduel-sketch-2.png" alt="">
+                      </li>
+                      <li>
+                          <img src="assets/images/cricduel/cricduel-sketch-1.png" alt="">
+                      </li>
+                  </ul>
+              </div>
+              <div class="uk-hidden@s uk-light">
+                  <a class="uk-position-center-left uk-position-small" href="#" uk-slidenav-previous uk-slider-item="previous"></a>
+                  <a class="uk-position-center-right uk-position-small" href="#" uk-slidenav-next uk-slider-item="next"></a>
+              </div>
+              <div class="uk-visible@s">
+                  <a class="uk-position-center-left-out uk-position-small" href="#" uk-slidenav-previous uk-slider-item="previous"></a>
+                  <a class="uk-position-center-right-out uk-position-small" href="#" uk-slidenav-next uk-slider-item="next"></a>
+              </div>
+          </div>
+          <ul class="uk-slider-nav uk-dotnav uk-flex-center uk-margin"></ul>
+      </div>
+    </div>
+  </div>
+  <div class="uk-container uk-container-small uk-margin-large">
+    <div uk-lightbox class="uk-margin-top">
+      <a href="assets/images/cricduel/mockup-classic-enter.png"><img src="assets/images/cricduel/mockup-classic-enter.png"></a>
+    </div>
+  </div>
+  <div class="uk-container uk-container-small uk-margin-large">
+    <div uk-lightbox class="uk-margin-top">
+      <a href="assets/images/cricduel/mockup-classic-create.png"><img src="assets/images/cricduel/mockup-classic-create.png"></a>
+    </div>
+  </div>
+  <div class="uk-container uk-container-small uk-margin-large">
+    <h3>Motion Ideas</h3>
+    <p>A majority of the users based in India and had 360 x 640 resolution. Taking that into consideration with the amount of information our app was delivering paired along with our design we had to think of ways how to display the information and accommodate scrolling. Here are a few examples we played with:</p>
+  </div>
+  <div class="uk-container uk-container-small uk-margin-large">
+    <div class="uk-child-width-1-3@m" uk-grid uk-lightbox="animation: slide">
+        <div>
+            <a class="uk-inline" href="assets/images/cricduel/interaction-1.gif" data-caption="Multiple Choice">
+                <img class="uk-box-shadow-medium" src="assets/images/cricduel/interaction-1.gif" alt="">
+            </a>
+        </div>
+        <div>
+            <a class="uk-inline" href="assets/images/cricduel/interaction-3.gif" data-caption="Multiple Choice Answered">
+                <img class="uk-box-shadow-medium" src="assets/images/cricduel/interaction-3.gif" alt="">
+            </a>
+        </div>
+        <div>
+            <a class="uk-inline" href="assets/images/cricduel/final-interaction-1.gif" data-caption="Multiple Choice Answered">
+                <img class="uk-box-shadow-medium" src="assets/images/cricduel/final-interaction-1.gif" alt="">
+            </a>
+        </div>
+    </div>
+  </div>
+  <div class="uk-container uk-container-small uk-margin-large">
+    <h3>Final Screens</h3>
+  </div>
+  <div class="uk-container uk-container-small uk-margin-large">
+    <div class="uk-child-width-1-3@m" uk-grid uk-lightbox="animation: slide">
+        <div>
+            <a class="uk-inline" href="assets/images/cricduel/livedraft.png" data-caption="Multiple Choice">
+                <img class="uk-box-shadow-medium" src="assets/images/cricduel/livedraft.png" alt="">
+            </a>
+        </div>
+        <div>
+            <a class="uk-inline" href="assets/images/cricduel/leaderboard.png" data-caption="Multiple Choice Answered">
+                <img class="uk-box-shadow-medium" src="assets/images/cricduel/leaderboard.png" alt="">
+            </a>
+        </div>
+        <div>
+            <a class="uk-inline" href="assets/images/cricduel/classdraft.png" data-caption="Multiple Choice Answered">
+                <img class="uk-box-shadow-medium" src="assets/images/cricduel/classdraft.png" alt="">
+            </a>
+        </div>
+    </div>
+  </div>
+  <div class="uk-container uk-container-small uk-margin-large">
+    <h3>Design System</h3>
+    <p>We created documentation for the visual design requirements to hand off to the engineer. This document contained style guides, component library and design specifications to help as the application grows the next designer/developer could user as a reference. I modeled the system after Googles <a href="https://material.io/design/">Material Design</a>. Paired with using Abstract we created a live and shareable component library. Abstract does a pretty good job simulating version control and it’s specifically for design teams!</p>
+  </div>
+  <div class="uk-container uk-container-expand">
+    <img src="assets/images/cricduel/design-system-sample.png">
+  </div>
+
+    <div class="uk-section">
+      <div class="uk-container uk-container-small">
+        <h3>Take Aways</h3>
+        <p>Doing a redesign and managing a design system is really difficult. Given the 8 week timeline, redesign and 2 new features it was really hectic in managing the components. Different teams would be making or changing components and their use cases.</p>
+        <p>Abstract + Material Design, I definitely would trim down unused symbols components as soon as possible, running sketch plugin: symbol organizer on the material design library slows down the process tremendously.</p>
+        <p>Have multiple reviewers on the design system team. I was the sole reviewer of component and other changes done. This took up too much time especially when deadlines became tighter. However as much as it was hectic it was really cool creating a system that was evolving into something tangible and usable.</p>
+        <p>I enjoyed making the detailed interactions and animations. When a developer is able to see the whole process down to the animations I know it makes their life a little easier!</p>
+      </div>
+    </div>
+
+  <!--footer-->
+  <footer class="uk-section uk-section-small">
+  			<div class="uk-container">
+  				<p class="uk-text-small uk-text-center">Copyright 2019 - Created by Dennis | Built with <a href="http://getuikit.com" title="" target="_blank" data-uk-tooltip="" aria-expanded="false"><span data-uk-icon="uikit" class="uk-icon"><svg width="20" height="20" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg" data-svg="uikit"><polygon points="14.4,3.1 11.3,5.1 15,7.3 15,12.9 10,15.7 5,12.9 5,8.5 2,6.8 2,14.8 9.9,19.5 18,14.8 18,5.3"></polygon><polygon points="9.8,4.2 6.7,2.4 9.8,0.4 12.9,2.3"></polygon></svg></span></a> </p>
+  			</div>
+	</footer>
+</body>
 </html>
